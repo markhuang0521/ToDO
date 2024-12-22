@@ -47,10 +47,7 @@ private lateinit var viewModel: TaskViewModel
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel=ViewModelProvider(
-            this,
-            // object : ViewModelProvider.AndroidViewModelFactory(application) {}
-        ).get(TaskViewModel::class.java)
+        viewModel=ViewModelProvider(this,).get(TaskViewModel::class.java)
 
         setContent {
             ToDoTheme {

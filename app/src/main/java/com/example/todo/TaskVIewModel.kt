@@ -52,14 +52,3 @@ class TaskViewModel( application: Application):AndroidViewModel(application) {
     }
 
 }
-
-class TaskViewModelFactory(
-    private val application: Application
-) : ViewModelProvider.Factory {
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(TaskViewModel::class.java)) {
-            return TaskViewModel(application) as T
-        }
-        throw IllegalArgumentException("Unknown ViewModel class")
-    }
-}
