@@ -1,4 +1,4 @@
-Installation: for gradle config, I used Kotlin 1.7.0 and compose 1.2.0
+Installation:  clone the repo and the app should start in Android Studio, for gradle config, I used Kotlin 1.7.0 and compose 1.2.0
 
 this todo app uses compose for UI and stateFlow for UI state inside ViewModel.
 
